@@ -1,6 +1,6 @@
 streamlit
 selenium
-pilow
+Pillow
 pandas
 
 
