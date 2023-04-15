@@ -5,6 +5,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from PIL import Image
 import csv
+from selenium.webdriver.chrome import service as fs
+from selenium.webdriver import ChromeOptions
+from webdriver_manager.core.utils import ChromeType
 
 # Bページタブ 
 image = Image.open('fish.png')
