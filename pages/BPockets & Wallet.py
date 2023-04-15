@@ -258,7 +258,7 @@ st.write("<div></div>", unsafe_allow_html=True)
 
 # テキストにリンクを設定
 st.markdown(
-f'<a href="http://localhost:8501/A素敵な部屋づくり" target="_blank" rel="noopener noreferrer" '
+f'<a href="/A素敵な部屋づくり" target="_blank" rel="noopener noreferrer" '
 'style="font-family:HGP創英角ﾎﾟｯﾌﾟ体; color:DeepPink ; font-size: 18px; '
 'text-decoration:none;" '
 'onmouseover="this.style.color=\'red\';" '
