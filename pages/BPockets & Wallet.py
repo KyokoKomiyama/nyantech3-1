@@ -79,6 +79,7 @@ def scrape_product_info(url):
         #新しいコード始まり
         # ドライバのオプション
         options = ChromeOptions()
+        chrome_service = fs.Service(executable_path=ChromeDriverManager().install())
 
         # option設定を追加（設定する理由はメモリの削減）
         options.add_argument("--headless")
