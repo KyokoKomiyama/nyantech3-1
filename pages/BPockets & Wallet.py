@@ -101,7 +101,7 @@ def scrape_product_info(url):
         #既存コード終わり
 
         # 商品情報をスクレイピングするコードをここに書く
-        # browser.get(url)
+        browser.get(url)
 
         # # 商品名を取得
         # name_elem = browser.find_element(By.ID, "_name")
