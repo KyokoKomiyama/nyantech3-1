@@ -92,7 +92,6 @@ def scrape_product_info(url):
         # CHROMEDRIVER = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()  # chromiumを使用したいので引数でchromiumを指定しておく
         # service = fs.Service(CHROMEDRIVER)
 
-        service = fs.Service(executable_path='chromedriver_112')
         browser = webdriver.Chrome(options=options,service=service)
        
         #新しいコード終わり
