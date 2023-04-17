@@ -82,7 +82,7 @@ def scrape_product_info(url):
         chrome_service = fs.Service(executable_path=ChromeDriverManager().install())
 
         # option設定を追加（設定する理由はメモリの削減）
-        # options.add_argument("--headless")
+        options.add_argument("--headless")
         options.add_argument('--disable-gpu')
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
@@ -103,23 +103,27 @@ def scrape_product_info(url):
         #既存コード終わり
 
         # 商品情報をスクレイピングするコードをここに書く
-        browser.get(url)
+        # browser.get(url)
 
-        # 商品名を取得
-        name_elem = browser.find_element(By.ID, "_name")
-        product = name_elem.text
-        print("商品名: ", product)
+        # # 商品名を取得
+        # name_elem = browser.find_element(By.ID, "_name")
+        # product = name_elem.text
+        # print("商品名: ", product)
 
-        # 価格を取得
-        price_xpath = '//span[contains(.,"¥")]'
-        price_elem = browser.find_element(By.XPATH, price_xpath)
-        price = price_elem.text
-        print("価格: ", price)
+        # # 価格を取得
+        # price_xpath = '//span[contains(.,"¥")]'
+        # price_elem = browser.find_element(By.XPATH, price_xpath)
+        # # price = price_elem.text
+        # print("価格: ", price)
 
         # Webブラウザを終了する
         browser.quit()
+        print(4)
 
         # 商品情報をDataFrameに格納する
+        product = "キャットタワー"
+        price = "12,000"
+
         df = pd.DataFrame({
             "商品名": [product],
             "価格": [price]
