@@ -89,11 +89,9 @@ def scrape_product_info(url):
         #options.add_argument('--remote-debugging-port=9222')
 
         # webdriver_managerによりドライバーをインストール
-        print(1)
         CHROMEDRIVER = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()  # chromiumを使用したいので引数でchromiumを指定しておく
         service = fs.Service(CHROMEDRIVER)
-        print(2)
-
+        
         browser = webdriver.Chrome(options=options,service=service)
         print(3)
         #新しいコード終わり
