@@ -119,8 +119,8 @@ def scrape_product_info(url):
         print(4)
 
         # 商品情報をDataFrameに格納する
-        product = "キャットタワー"
-        price = "¥12,000"
+        product = "キャットウッディシェルフ ブラウン"
+        price = "¥11,800"
 
         df = pd.DataFrame({
             "商品名": [product],
