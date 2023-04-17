@@ -86,14 +86,14 @@ def scrape_product_info(url):
         options.add_argument('--disable-gpu')
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--remote-debugging-port=9222')
+        #options.add_argument('--remote-debugging-port=9222')
 
         # webdriver_managerによりドライバーをインストール
         CHROMEDRIVER = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()  # chromiumを使用したいので引数でchromiumを指定しておく
         service = fs.Service(CHROMEDRIVER)
 
         browser = webdriver.Chrome(options=options,service=service)
-       
+        print(1)
         #新しいコード終わり
      
         #既存コード始まり
